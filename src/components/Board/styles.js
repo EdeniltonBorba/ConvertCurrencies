@@ -7,3 +7,17 @@ export const Container = styled.div`
 
   display: flex;
 `;
+
+export const Headline = styled.div`
+    height: 47px;
+    width: 570px;
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    text-align: center;
+    margin-top: 199px;
+    margin-left: 60px;
+    font-weight: bold;
+`;

@@ -1,23 +1,30 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const UpperHalf = styled.div`
   height: 400px;
-  width: 1280px;
+  width: 100%;
   background-color: #363A3E;
-
   display: flex;
 `;
 
+export const PickarLogoWhite = styled.div`
+  color: #FFF;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 60px;
+  font-weight: bold;
+  display: flex;
+`;
+
+
 export const Headline = styled.div`
-    height: 47px;
-    width: 570px;
     color: #FFF;
-    font-family: 'Roboto';
     font-size: 40px;
-    font-weight: 700;
-    line-height: 47px;
-    text-align: center;
     margin-top: 199px;
     margin-left: 60px;
     font-weight: bold;
+    display: flex;
+    position: absolute;
 `;
+

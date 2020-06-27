@@ -1,10 +1,24 @@
 import React from 'react';
-import { BoxBackground } from "./styles.js";
+import {
+    BoxBackground,
+    InputField,
+    Name,
+    Background,
+} from "./styles.js";
 
 export default function Box() {
     return (
         <BoxBackground>
 
-        </BoxBackground>
+            <InputField>
+                <Name>
+                    Amount
+                   </Name>
+                <Background>
+
+                </Background>
+            </InputField>
+
+        </BoxBackground >
     );
 }

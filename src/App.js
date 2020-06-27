@@ -1,14 +1,24 @@
 import React from 'react';
-import GlobalStyle from './styles/global';
-import Board from './components/Board';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import Board from './pages/board/index.js';
+import History from './pages/history/index.js';
 
-function App() {
+export default function App() {
   return (
-    <>
-      <Board />
-      <GlobalStyle />
-    </>
+    <Router>
+      <React.Fragment>
+        <div>
+          <Switch>
+            <Route exact path="/"><Board /></Route>
+            <Route exact path="/history"><History /></Route>
+          </Switch>
+        </div>
+      </React.Fragment>
+    </Router>
   );
 }
 
-export default App;

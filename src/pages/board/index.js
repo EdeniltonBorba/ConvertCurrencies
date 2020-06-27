@@ -12,6 +12,7 @@ export default function Board() {
             <Headline>
                 Convert currencies in real-time.
             </Headline>
+            <Box />
         </UpperHalf>
     )
 }

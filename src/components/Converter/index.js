@@ -17,7 +17,7 @@ export default function Box() {
                 <Background>
 
                 </Background>
-            </InputField>
+            </InputField >
 
         </BoxBackground >
     );

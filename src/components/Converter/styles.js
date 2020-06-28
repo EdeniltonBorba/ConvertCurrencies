@@ -19,6 +19,37 @@ export const InputField = styled.div`
   margin-top: 28px;
 `;
 
+export const DropdownFrom = styled.div`
+  height: 64px;
+  width: 200px;
+  margin-left: 40px;
+  margin-top: 28px;
+`;
+
+export const Switcher = styled.div`
+img {
+  height: 12px;
+  width: 12px;
+  margin-left: 16px;
+  margin-top: 67px;
+  position: absolute;
+}
+`;
+
+export const DropdownTo = styled.div`
+  height: 64px;
+  width: 200px;
+  margin-left: 40px;
+  margin-top: 28px;
+`;
+
+export const ButtonConvert = styled.div`
+  height: 64px;
+  width: 200px;
+  margin-left: 40px;
+  margin-top: 28px;
+`;
+
 export const Name = styled.div`
   height: 14px;
   width: 43px;
@@ -33,6 +64,6 @@ export const Background = styled.div`
   height: 40px;
   width: 200px;
   border-radius: 8px;
-  background-color: rgba(54,58,62,0.08);
+  background-color: #14363A3E;
   margin-top: 10px;  
 `;

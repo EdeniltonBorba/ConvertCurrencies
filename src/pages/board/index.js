@@ -3,6 +3,7 @@ import { UpperHalf, Headline, } from './styles';
 import Box from '../../components/Converter/index.js';
 import ButtonHistory from '../../components/ButtonHistory/index.js';
 import Global from '../../styles/global.js';
+import Result from '../../components/Result/index.js';
 
 
 
@@ -16,6 +17,7 @@ export default function Board() {
                 </Headline>
                 <Box />
                 <ButtonHistory />
+                <Result />
             </UpperHalf>
             <Global />
         </>

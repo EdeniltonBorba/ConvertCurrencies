@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Button = styled.div`
+a {
   position: absolute;
   height: 14px;
   width: 136px;
@@ -10,4 +11,5 @@ export const Button = styled.div`
   line-height: 14px; 
   margin-left: 1084px;
   margin-top: 424px; 
+}
 `;

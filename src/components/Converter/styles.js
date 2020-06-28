@@ -9,6 +9,7 @@ box-shadow: 0 0 50px 0 rgba(0,0,0,0.2);
 margin-left: 60px;
 margin-top: 336px;
 position: absolute;
+display: flex;
 `;
 
 export const InputField = styled.div`
@@ -16,7 +17,6 @@ export const InputField = styled.div`
   width: 200px;
   margin-left: 40px;
   margin-top: 28px;
-
 `;
 
 export const Name = styled.div`

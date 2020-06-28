@@ -18,6 +18,24 @@ export default function Box() {
 
                 </Background>
             </InputField >
+            <InputField>
+                <Name>
+                    From
+                   </Name>
+                <Background>
+
+                </Background>
+            </InputField >
+            <InputField>
+                <Name>
+                    To
+                   </Name>
+                <Background>
+
+                </Background>
+            </InputField >
+
+
 
         </BoxBackground >
     );

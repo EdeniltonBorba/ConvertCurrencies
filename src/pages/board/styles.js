@@ -5,18 +5,13 @@ export const UpperHalf = styled.div`
   width: 100%;
   background-color: #363A3E;
   display: flex;
+  img {
+    height: 35px;
+    width: 99.8px;
+    margin-top: 40px;
+    margin-left: 60px;
+  }
 `;
-
-export const PickarLogoWhite = styled.div`
-  color: #FFF;
-  font-size: 40px;
-  text-align: center;
-  margin-top: 40px;
-  margin-left: 60px;
-  font-weight: bold;
-  display: flex;
-`;
-
 
 export const Headline = styled.div`
     color: #FFF;

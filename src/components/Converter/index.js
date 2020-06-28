@@ -5,6 +5,7 @@ import {
     Name,
     Background,
 } from "./styles.js";
+import ButtonConvert from '../ButtonConvert/index.js';
 
 export default function Box() {
     return (
@@ -34,9 +35,7 @@ export default function Box() {
 
                 </Background>
             </InputField >
-
-
-
+            <ButtonConvert />
         </BoxBackground >
     );
 }

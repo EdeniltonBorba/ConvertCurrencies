@@ -21,5 +21,6 @@ export const Headline = styled.div`
     font-weight: bold;
     display: flex;
     position: absolute;
+    
 `;
 

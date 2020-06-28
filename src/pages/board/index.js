@@ -13,7 +13,7 @@ export default function Board() {
                 <img src={require('../../assets/image/logo.png')} alt="logo" />
                 <Headline>
                     Convert currencies in real-time.
-            </Headline>
+                </Headline>
                 <Box />
                 <ButtonHistory />
             </UpperHalf>

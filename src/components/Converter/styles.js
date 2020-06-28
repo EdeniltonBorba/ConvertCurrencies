@@ -22,7 +22,7 @@ export const InputField = styled.div`
 export const DropdownFrom = styled.div`
   height: 64px;
   width: 200px;
-  margin-left: 40px;
+  margin-left: 24px;
   margin-top: 28px;
 `;
 
@@ -32,23 +32,16 @@ img {
   width: 12px;
   margin-left: 16px;
   margin-top: 67px;
-  position: absolute;
 }
 `;
 
 export const DropdownTo = styled.div`
   height: 64px;
   width: 200px;
-  margin-left: 40px;
+  margin-left: 16px;
   margin-top: 28px;
 `;
 
-export const ButtonConvert = styled.div`
-  height: 64px;
-  width: 200px;
-  margin-left: 40px;
-  margin-top: 28px;
-`;
 
 export const Name = styled.div`
   height: 14px;

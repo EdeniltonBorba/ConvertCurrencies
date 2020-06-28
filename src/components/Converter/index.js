@@ -16,7 +16,7 @@ export default function Box() {
             <form>
                 <div className="form-row">
                     <InputField>
-                        <div className="form-group col-md-6">
+                        <div className="form-group">
                             <Name>
                                 <label for="inputCity">Amount</label>
                             </Name>
@@ -26,7 +26,7 @@ export default function Box() {
                         </div>
                     </InputField>
                     <DropdownFrom>
-                        <div className="form-group col-md-4">
+                        <div className="form-group">
                             <Name>
                                 <label for="inputState">From</label>
                             </Name>
@@ -40,13 +40,11 @@ export default function Box() {
                     </DropdownFrom>
                     <Switcher>
                         <div className="form-group">
-                            <div className="form-check">
-                                <img src={require('../../assets/image/Switcher.png')} alt="logo" />
-                            </div>
+                            <img src={require('../../assets/image/Switcher.png')} alt="logo" />
                         </div>
                     </Switcher>
                     <DropdownTo>
-                        <div className="form-group col-md-2">
+                        <div className="form-group">
                             <Name>
                                 <label for="inputZip">To</label>
                             </Name>
@@ -58,9 +56,7 @@ export default function Box() {
                             </Background>
                         </div>
                     </DropdownTo>
-                    <ButtonConvert>
-                        <button type="submit" className="btn btn-primary">Sign in</button>
-                    </ButtonConvert>
+                    <ButtonConvert />
                 </div>
             </form>
         </BoxBackground>

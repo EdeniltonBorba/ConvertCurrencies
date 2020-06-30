@@ -1,10 +1,12 @@
 import React from 'react';
-import { Container, PickarLogoWhite } from './styles.js';
+import { Container } from './styles';
 
-export default function History() {
+export default function Board() {
     return (
-        <Container>
-            <PickarLogoWhite />
-        </Container>
+        <>
+            <Container>
+                <img src={require('../../assets/image/logo.png')} alt="logo" />
+            </Container>
+        </>
     )
 }

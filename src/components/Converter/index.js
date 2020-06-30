@@ -31,7 +31,7 @@ export default function Box() {
                                 <label for="inputState">From</label>
                             </Name>
                             <Background>
-                                <select name='currencies' className="form-control">
+                                <select name='currencies' id="from" className="form-control">
                                     <option selected>EUR</option>
                                     <option value='AED' title='United Arab Emirates Dirham'>AED</option>
                                     <option value='AFN' title='Afghan Afghani'>AFN</option>
@@ -217,7 +217,7 @@ export default function Box() {
                                 <label for="inputZip">To</label>
                             </Name>
                             <Background>
-                                <select name='currencies' className="form-control">
+                                <select name='currencies' id="to" className="form-control">
                                     <option selected>USD</option>
                                     <option value='AED' title='United Arab Emirates Dirham'>AED</option>
                                     <option value='AFN' title='Afghan Afghani'>AFN</option>

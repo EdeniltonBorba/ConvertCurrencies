@@ -5,8 +5,6 @@ import ButtonHistory from '../../components/ButtonHistory/index.js';
 import Global from '../../styles/global.js';
 import Result from '../../components/Result/index.js';
 
-
-
 export default function Board() {
     return (
         <>
@@ -23,3 +21,4 @@ export default function Board() {
         </>
     )
 }
+

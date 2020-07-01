@@ -60,3 +60,35 @@ export const Background = styled.div`
   background-color: #14363A3E;
   margin-top: 10px;  
 `;
+
+export const Button = styled.div`
+input {
+  height: 40px;
+  width: 117px;
+  border-radius: 8px;
+  background-color: #FF4F54;
+  margin-left: 40px;
+  margin-top: 52px; 
+}
+`;
+
+export const ResultStyle = styled.div`
+h4 {
+  height: 23px;
+  width: 400px;
+  color: #363A3E;
+  font-size: 20px;
+  line-height: 23px;
+  margin-left:110px;
+  margin-top:528px;
+}
+h1 {
+  height: 47px;
+  width: 400px;
+  color: #363A3E;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 47px;
+  margin-left:110px;
+}
+`;

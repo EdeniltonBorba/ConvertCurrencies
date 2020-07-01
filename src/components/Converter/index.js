@@ -51,7 +51,7 @@ export default class Convert extends Component {
                                             <label for="inputCity">Amount</label>
                                         </Name>
                                         <Background>
-                                            <input type="text" onChange={(event) => { this.setState({ currenciesA_value: event.target.value }) }} className="form-control" placeholder="$" />
+                                            <input type="text" onChange={(event) => { this.setState({ currenciesA_value: event.target.value }) }} className="form-control" placeholder="1.00" />
                                         </Background>
                                     </div>
                                 </InputField>

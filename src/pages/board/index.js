@@ -3,7 +3,6 @@ import { UpperHalf, Headline, } from './styles';
 import Box from '../../components/Converter/index.js';
 import ButtonHistory from '../../components/ButtonHistory/index.js';
 import Global from '../../styles/global.js';
-import Result from '../../components/Result/index.js';
 
 class App extends Component {
     render() {
@@ -18,7 +17,6 @@ class App extends Component {
                         <Box currenciesA="EUR" currenciesB="USD"></Box>
                     </div>
                     <ButtonHistory />
-                    <Result />
                 </UpperHalf>
                 <Global />
             </>

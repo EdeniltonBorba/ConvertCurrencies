@@ -31,9 +31,8 @@ export default class Convert extends Component {
             })
             .then(json => {
                 let price = json.quotes.USDEUR;
-                let currenciesB_value = (parseFloat(this.state.currenciesA_value) * price)
+                let currenciesB_value = (parseFloat(this.state.currenciesA_value) * price).toFixed(2)
                 this.setState({ currenciesB_value })
-                console.log(price)
             })
 
     }
@@ -45,7 +44,7 @@ export default class Convert extends Component {
                     <h2>{this.props.currenciesA} to {this.props.currenciesB}</h2>
                     <input type="text" onChange={(event) => { this.setState({ currenciesA_value: event.target.value }) }} className="form-control" placeholder="$" />
                     <input type="button" value="Convert" onClick={this.converter}></input>
-                    <h2>{this.state.currenciesB_value}</h2>
+                    <h2>{this.state.currenciesB_value} USD</h2>
 
                 </div>
             </BoxBackground>

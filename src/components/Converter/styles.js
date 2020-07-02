@@ -57,7 +57,6 @@ export const Background = styled.div`
   height: 40px;
   width: 200px;
   border-radius: 8px;
-  background-color: #14363A3E;
   margin-top: 10px;  
 `;
 

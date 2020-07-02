@@ -69,6 +69,11 @@ input {
   background-color: #FF4F54;
   margin-left: 40px;
   margin-top: 52px; 
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  border: none;
 }
 `;
 

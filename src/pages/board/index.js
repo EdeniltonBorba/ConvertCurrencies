@@ -4,7 +4,7 @@ import Box from '../../components/Converter/index.js';
 import ButtonHistory from '../../components/ButtonHistory/index.js';
 import Global from '../../styles/global.js';
 
-class App extends Component {
+class Board extends Component {
     render() {
         return (
             <>
@@ -22,4 +22,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default Board;

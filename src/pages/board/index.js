@@ -13,9 +13,7 @@ class App extends Component {
                     <Headline>
                         Convert currencies in real-time.
                 </Headline>
-                    <div className="App">
-                        <Box currenciesA="EUR" currenciesB="USD"></Box>
-                    </div>
+                    <Box currenciesA="EUR" currenciesB="USD"></Box>
                     <ButtonHistory />
                 </UpperHalf>
                 <Global />

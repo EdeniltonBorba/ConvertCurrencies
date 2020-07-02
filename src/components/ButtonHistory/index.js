@@ -6,7 +6,7 @@ export default function ButtonHistory() {
         <Button>
             <a href="/history">
                 View conversion history >
-        </a>
+            </a>
         </Button>
     );
 }

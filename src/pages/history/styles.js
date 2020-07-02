@@ -13,3 +13,16 @@ export const Container = styled.div`
   }
 `;
 
+export const ButtonGoBack = styled.div`
+position: absolute;
+a {
+  height: 14px;
+  width: 53px;
+  color: #FFF;
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 125px;
+  margin-left: 60px;
+  position: absolute;
+}
+`;

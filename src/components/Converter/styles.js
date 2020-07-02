@@ -24,6 +24,11 @@ export const DropdownFrom = styled.div`
   width: 200px;
   margin-left: 24px;
   margin-top: 28px;
+  select {
+    background-color:rgba(54,58,62,0.08);
+    border: none;
+    border-radius: 8px;
+  }
 `;
 
 export const Switcher = styled.div`
@@ -40,6 +45,11 @@ export const DropdownTo = styled.div`
   width: 200px;
   margin-left: 16px;
   margin-top: 28px;
+  select {
+    background-color:rgba(54,58,62,0.08);
+    border: none;
+    border-radius: 8px;
+  }
 `;
 
 
@@ -58,6 +68,11 @@ export const Background = styled.div`
   width: 200px;
   border-radius: 8px;
   margin-top: 10px;  
+  input {
+    background-color:rgba(54,58,62,0.08);
+    border: none;
+    border-radius: 8px;
+  }
 `;
 
 export const Button = styled.div`

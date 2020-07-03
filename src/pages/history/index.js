@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, ButtonGoBack } from './styles';
+import ConversionHistory from '../../components/ConversionHistory/index.js';
 
 export default function Board() {
     return (
@@ -11,6 +12,7 @@ export default function Board() {
                         Go Back
                     </a>
                 </ButtonGoBack>
+                <ConversionHistory />
             </Container>
         </>
     )

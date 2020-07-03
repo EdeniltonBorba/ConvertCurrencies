@@ -17,7 +17,7 @@ font-size: 12px;
 line-height: 14px;
 display:grid;
 grid-template-columns: 1fr 1fr 1fr;
-margin-top: 28px;
+margin-bottom: 28px;
 `;
 
 export const Conversion = styled.div`

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Names } from './styles';
+import { Container, Names, Conversion } from './styles';
 
 class ConversionHistory extends Component {
     render() {
@@ -11,7 +11,9 @@ class ConversionHistory extends Component {
                         <ul>From</ul>
                         <ul>To</ul>
                     </Names>
+                    <Conversion>
 
+                    </Conversion>
                 </Container>
             </>
         )

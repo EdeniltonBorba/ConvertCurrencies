@@ -12,9 +12,10 @@ display: flex;
 export const Names = styled.div`
 
 position: absolute;
-display: flex;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
 height: 14px;
-  width: 25.28px;
+  width: 734.16px;
   opacity: 0.5;
   color: #FFF;
   font-family: "Roboto";

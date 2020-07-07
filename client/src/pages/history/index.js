@@ -3,14 +3,14 @@ import { Container, ButtonGoBack } from './styles';
 import ConversionHistory from '../../components/ConversionHistory/index.js';
 
 export default function History() {
-
-    const [conversion, setConversion] = useState([])
-    const [formObject, setFormObject] = useState({})
-
-    useEffect(() => {
-        loadConcersion()
-    }, [])
-
+    /*
+        const [conversion, setConversion] = useState([])
+        const [formObject, setFormObject] = useState({})
+    
+        useEffect(() => {
+            loadConcersion()
+        }, [])
+    */
     return (
         <>
             <Container>

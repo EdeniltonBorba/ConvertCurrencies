@@ -35,7 +35,6 @@ export default class Convert extends Component {
                 let currenciesB_value = (parseFloat(this.state.currenciesA_value) * price).toFixed(2)
                 this.setState({ currenciesB_value })
             })
-
     }
 
     render() {

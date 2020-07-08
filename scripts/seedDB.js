@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const db = require("../models");
 
-mongoose.connect('mongodb://localhost/reactreadinglist', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost/conversionhistory', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const db = mongoose.connect;
 db.on('error', console.error.bind(console, 'connection error:'));

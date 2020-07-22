@@ -7,7 +7,7 @@ const path = require('path');
 
 const PORT = process.env.PORT || 9000;
 
-mongoose.connect('mongodb://localhost/conversionhistory', {
+mongoose.connect('mongodb://localhost:27017/CurrencyConverter', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false

@@ -2,7 +2,7 @@ const express = require("express");
 const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const mongoose = require("mongoose");
-const routes = require("./routes");
+const routes = require("./src/routes");
 const path = require('path');
 
 const PORT = process.env.PORT || 9000;

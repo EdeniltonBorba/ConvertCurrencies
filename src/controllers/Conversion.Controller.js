@@ -1,8 +1,7 @@
 const Conversion = require("../models/conversion.model");
-const { create, update } = require("../models/conversion.model");
 
 module.exports = {
-    async indexedDB(req, res) {
+    async index(req, res) {
         const conversion = await Conversion.find();
         res.json(conversion);
     },

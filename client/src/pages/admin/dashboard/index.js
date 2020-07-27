@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Container, ButtonGoBack } from './styles';
 import ConversionHistory from '../../../components/ConversionHistory/index';
 
+
 export default function History() {
     /*
         const [conversion, setConversion] = useState([])
@@ -14,7 +15,7 @@ export default function History() {
     return (
         <>
             <Container>
-                <img src={require('../../assets/image/logo.png')} alt="logo" />
+                <img src={require('../../../assets/image/logo.png')} alt="logo" />
                 <ButtonGoBack>
                     <a href="/">
                         Go Back

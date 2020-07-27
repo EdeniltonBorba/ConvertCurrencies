@@ -9,7 +9,7 @@ class Board extends Component {
         return (
             <>
                 <UpperHalf>
-                    <img src={require('../../assets/image/logo.png')} alt="logo" />
+                    <img src={require('../../../assets/image/logo.png')} alt="logo" />
                     <Headline>
                         Convert currencies in real-time.
                 </Headline>

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import {
     BoxBackground,
     InputField,
@@ -10,6 +10,14 @@ import {
     Button,
     ResultStyle,
 } from "./styles.js";
+import { response } from 'express';
+import api from '../../services/api.js';
+
+
+const [amount, setAmount] = useState('');
+const [from, setFrom] = useState('');
+const [to, setTo] = useState('');
+const [value, setValue] = useState('');
 
 export default class Convert extends Component {
 
@@ -22,6 +30,7 @@ export default class Convert extends Component {
         }
         this.converter = this.converter.bind(this);
     }
+
 
     converter() {
         let from_to = `${this.props.currenciesA}&source=${this.props.currenciesB}`;
@@ -37,6 +46,33 @@ export default class Convert extends Component {
             })
     }
 
+    RegisterConversion() {
+        const [amount, setAmount] = useState('');
+        const [from, setFrom] = useState('');
+        const [to, setTo] = useState('');
+        const [value, setValue] = useState('');
+
+        async function handleSubmit() {
+
+            const data = {
+                conversion_value: amount,
+                conversion_currency: from,
+                converted_value: to,
+                converted_currency: value
+            }
+            if (amount != '' && from != '' && to != '' && value != '') {
+                const response = await api.post('/api/conversion')
+
+                if (response.status === 200) {
+                    window.location.href = '/history'
+                } else {
+                    alert('error registering the conversion');
+                }
+            } else {
+                alert('please, fill in the data');
+            }
+        }
+    }
     render() {
         return (
             <>

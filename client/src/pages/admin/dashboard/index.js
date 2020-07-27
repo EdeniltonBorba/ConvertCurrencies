@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, ButtonGoBack } from './styles';
-import ConversionHistory from '../../components/ConversionHistory/index.js';
+import ConversionHistory from '../../../components/ConversionHistory/index';
 
 export default function History() {
     /*

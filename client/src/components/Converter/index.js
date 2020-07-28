@@ -10,7 +10,6 @@ import {
     Button,
     ResultStyle,
 } from "./styles.js";
-import { response } from 'express';
 import api from '../../services/api.js';
 
 
@@ -60,7 +59,7 @@ export default class Convert extends Component {
                 converted_value: to,
                 converted_currency: value
             }
-            if (amount != '' && from != '' && to != '' && value != '') {
+            if (amount !== '' && from !== '' && to !== '' && value !== '') {
                 const response = await api.post('/api/conversion')
 
                 if (response.status === 200) {
@@ -73,6 +72,7 @@ export default class Convert extends Component {
             }
         }
     }
+
     render() {
         return (
             <>
@@ -86,7 +86,16 @@ export default class Convert extends Component {
                                             <label for="inputCity">Amount</label>
                                         </Name>
                                         <Background>
-                                            <input type="text" onChange={(event) => { this.setState({ currenciesA_value: event.target.value }) }} className="form-control" placeholder="1.00" />
+                                            <input
+                                                required
+                                                id="amount"
+                                                name="amount"
+                                                label="Amount"
+                                                type="text"
+                                                value={amount}
+                                                onChange={e => setAmount(e.target.value)}
+                                                className="form-control"
+                                                placeholder="1.00" />
                                         </Background>
                                     </div>
                                 </InputField>
@@ -96,7 +105,16 @@ export default class Convert extends Component {
                                             <label for="inputState">From</label>
                                         </Name>
                                         <Background>
-                                            <select name='currencies' id="from" className="form-control">
+                                            <select
+                                                required
+                                                name='from'
+                                                id="from"
+                                                label="from"
+                                                type="text"
+                                                value={from}
+                                                onChange={e => setFrom(e.target.value)}
+                                                className="form-control"
+                                            >
                                                 <option selected>{this.props.currenciesA}</option>
                                                 <option value='CAD' title='Canadian Dollar'>CAD</option>
                                                 <option value='EUR' title='Euro'>EUR</option>
@@ -118,7 +136,16 @@ export default class Convert extends Component {
                                             <label for="inputZip">To</label>
                                         </Name>
                                         <Background>
-                                            <select name='currencies' id="to" className="form-control">
+                                            <select
+                                                required
+                                                name='to'
+                                                id="to"
+                                                label="To"
+                                                type="text"
+                                                value={to}
+                                                onChange={e => setTo(e.target.value)}
+                                                className="form-control"
+                                            >
                                                 <option selected>{this.props.currenciesB}</option>
                                                 <option value='CAD' title='Canadian Dollar'>CAD</option>
                                                 <option value='EUR' title='Euro'>EUR</option>
@@ -139,6 +166,16 @@ export default class Convert extends Component {
                 <ResultStyle>
                     <h4>1 EUR = </h4>
                     <h1>{this.state.currenciesB_value} USD</h1>
+                    <Button
+                        required
+                        name='value'
+                        id="value"
+                        label="Value"
+                        type="text"
+                        value={value}
+                        onChange={e => setValue(e.target.value)}
+                        className="form-control"
+                    >Save</Button>
                 </ResultStyle>
             </>
         )

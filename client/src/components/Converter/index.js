@@ -10,6 +10,7 @@ import {
     Button,
     ResultStyle,
 } from "./styles.js";
+import api from '../../services/api';
 
 export default class Convert extends Component {
 
@@ -118,6 +119,7 @@ export default class Convert extends Component {
                     <h4>1 EUR = </h4>
                     <h1>{this.state.currenciesB_value} USD</h1>
                 </ResultStyle>
+
             </>
         )
 
